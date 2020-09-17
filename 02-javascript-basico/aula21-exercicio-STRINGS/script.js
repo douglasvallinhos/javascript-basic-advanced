@@ -1,0 +1,19 @@
+const nome = prompt('Digite seu nome completo:');
+const quantidadeLetras = nome.length;
+const segundaLetra = nome[1];
+const primeiroIndiceLetraA = nome.indexOf('a');
+const ultimoIndiceLetraA = nome.lastIndexOf('a');
+const ultimasTresLetras = nome.slice(-3, nome.length);
+const palavrasDoNome = nome.split(' ');
+const nomeMaiscula = nome.toUpperCase();
+const nomeMinusculo = nome.toLowerCase();
+
+document.body.innerHTML += `Seu nome é: ${nome}<br />`;
+document.body.innerHTML += `Seu nome tem ${quantidadeLetras} letras <br />`;
+document.body.innerHTML += `A segunda letra do seu nome é: ${segundaLetra}<br />`;
+document.body.innerHTML += `Qual o primeiro índice da letra A no seu nome? ${primeiroIndiceLetraA}<br />`;
+document.body.innerHTML += `Qual o último índice da letra A no seu nome? ${ultimoIndiceLetraA}<br />`;
+document.body.innerHTML += `As últimas 3 letras do seu nome são: ${ultimasTresLetras}<br />`;
+document.body.innerHTML += `As palavras do seu nome são: ${palavrasDoNome}<br />`;
+document.body.innerHTML += `Seu nome com letras maiúsculas: ${nomeMaiscula}<br />`;
+document.body.innerHTML += `Seu nome com letras minúsculas: ${nomeMinusculo}<br />`;
