@@ -1,0 +1,6 @@
+npm init -y                           // cria o projeto node
+npm install nomePacote                // instala um pacote
+npm install nomePacote --save-dev     // instala um pacote em dev-dependencies (dependencia de desenvolvimento)
+npm install nomePacote --save-prod    // volta o pacote dev-dependencies para dependencies (produçao)
+npm install nomePacote@2.1.0          // instala o pacote em uma versão especifica
+npm uninstall nomePacote              // deleta o pacote
