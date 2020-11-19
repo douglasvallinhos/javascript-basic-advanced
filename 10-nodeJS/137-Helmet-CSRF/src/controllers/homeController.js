@@ -6,9 +6,12 @@ const HomeModel = require('../models/HomeModel.js');
 // });
 
 exports.home = (req, res) => {
-  res.render('index');
+  console.log(req.session.usuario);
+  res.render('index', {
+    titulo: 'teste de titulo',
+  });
 };
 
 exports.trataPost = (req, res) => {
-  res.send('Router Post');
+  res.send(req.body);
 };
